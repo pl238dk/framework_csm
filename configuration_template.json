@@ -1,0 +1,19 @@
+{
+	"servers":	{
+		"server1":	{
+			"host":	"",
+			"username":	"",
+			"password":	""
+		},
+		"server2":	{
+			"host":	"",
+			"username":	"",
+			"password":	""
+		},
+		"server3":	{
+			"host":	"",
+			"username": "",
+			"password":	""
+		}
+	}
+}
