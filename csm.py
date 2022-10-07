@@ -6,7 +6,6 @@
 import requests
 requests.packages.urllib3.disable_warnings()
 import json
-from timestamp.timestamp import timestamp
 import os
 import xml.etree.ElementTree as xml
 
@@ -42,7 +41,6 @@ class CSM(object):
 			#self.authenticate(connection_info)
 		return
 	
-	@timestamp
 	def login(self):
 		self.session = requests.Session()
 		self.session.trust_env = False
@@ -109,7 +107,6 @@ class CSM(object):
 		)
 		return data
 	
-	@timestamp
 	def logout(self):
 		params = {}
 		payload = self.get_payload('logoutRequest', params)
